@@ -1,3 +1,14 @@
+/* const [isWide, setIsWide] = useState(() => {
+  return window.matchMedia(query).matches
+}) 
+*/
+
+// only runs once when the component is rendered
+// React render
+// useLayoutEffect
+// pain
+// useEffect
+
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { api } from 'course-platform/utils/api'

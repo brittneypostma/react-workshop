@@ -3,7 +3,6 @@
 You're encouraged to take notes, but we don't want that to get in the way of listening to the lectures. So, we made notes for you. Feel free to edit as you wish!
 
 ---
-
 ## Lesson 1: Thinking in React
 
 - We like React because it's Composable and Declarative

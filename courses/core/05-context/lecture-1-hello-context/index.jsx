@@ -1,32 +1,33 @@
-import React, { useState, useContext } from 'react'
-import ReactDOM from 'react-dom'
-import './styles.scss'
+import React, { useState, useContext } from "react";
+import ReactDOM from "react-dom";
+import "./styles.scss";
 
 /**
  * Context is a little weird in TypeScript so we'll teach it with
  * vanilla JS first. https://reacttraining.com/blog/react-context-with-typescript/
  */
+// extract context provider function and useContext
 
 //////// App.tsx
 
 function App() {
-  const [count, setCount] = useState(0)
-  return <AppLayout count={count} setCount={setCount} />
+  const [count, setCount] = useState(0);
+  return <AppLayout count={count} setCount={setCount} />;
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<App />)
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
 
 //////// AppLayout.tsx
 
 function AppLayout({ count, setCount }) {
-  return <Page count={count} setCount={setCount} />
+  return <Page count={count} setCount={setCount} />;
 }
 
 //////// Page.tsx
 
 function Page({ count, setCount }) {
-  return <Counter count={count} setCount={setCount} />
+  return <Counter count={count} setCount={setCount} />;
 }
 
 //////// Counter.tsx
@@ -39,5 +40,5 @@ function Counter({ count, setCount }) {
         Count {count}
       </button>
     </div>
-  )
+  );
 }
